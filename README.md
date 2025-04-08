@@ -3,7 +3,7 @@ This is the official implementation code for AI4MAT-ICLR-2025 Spotlight paper ME
 
 Here is the visualization of the Matching-based EXtrapolation (MEX) framework.
 
-![overview](https://github.com/panmianzhi/Matching-based-EXtrapolation/imgs/method.png)
+![overview](https://github.com/panmianzhi/Matching-based-EXtrapolation/blob/main/imgs/method.png)
 
 ## Acknowledgement
 The structure of this repository is based on [fairchem](https://github.com/FAIR-Chem/fairchem).
