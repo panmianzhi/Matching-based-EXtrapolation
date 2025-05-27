@@ -1,0 +1,19 @@
+includes:
+- configs/erm/equiformer_v2/base.yml
+- configs/erm/params/base_param.yml
+dataset:
+  train:
+    src: data/extrapolation_benchmark/mp_gvrh_large/train
+    weighted_sample: false
+    full_max_y: 2.718501688867274
+    full_min_y: 0.0
+    transforms:
+      normalizer:
+        y:
+          mean: 1.3844942412528263
+          stdev: 0.30268260885881876
+  val:
+    src: data/extrapolation_benchmark/mp_gvrh_large/val
+  test:
+    src: data/extrapolation_benchmark/mp_gvrh_large/test
+logger: tensorboard

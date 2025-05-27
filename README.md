@@ -5,5 +5,10 @@ Here is the visualization of the Matching-based EXtrapolation (MEX) framework.
 
 ![overview](https://github.com/panmianzhi/Matching-based-EXtrapolation/blob/main/imgs/method.png)
 
+## Datasets
+All datasets used in this work are available in the [dataset](https://github.com/panmianzhi/Matching-based-EXtrapolation/tree/main/data) directory.
+
+## Model Architecture
+
 ## Acknowledgement
 The structure of this repository is based on [fairchem](https://github.com/FAIR-Chem/fairchem).

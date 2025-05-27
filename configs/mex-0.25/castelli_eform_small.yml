@@ -1,0 +1,20 @@
+includes:
+- configs/mex-0.25/equiformer_v2/base_ebm.yml
+- configs/mex-0.25/params/base_param.yml
+dataset:
+  train:
+    format: lmdb
+    src: data/extrapolation_benchmark/castelli_eform_small/train
+    weighted_sample: false
+    train_max_y: 5.16
+    train_min_y: 1.06
+    transforms:
+      normalizer:
+        y:
+          mean: 1.7953732468707584
+          stdev: 0.6371706956794733
+  val:
+    src: data/extrapolation_benchmark/castelli_eform_small/val
+  test:
+    src: data/extrapolation_benchmark/castelli_eform_small/test
+logger: tensorboard

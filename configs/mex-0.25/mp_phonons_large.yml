@@ -1,0 +1,20 @@
+includes:
+- configs/mex-0.25/equiformer_v2/base_ebm.yml
+- configs/mex-0.25/params/base_param.yml
+dataset:
+  train:
+    format: lmdb
+    src: data/extrapolation_benchmark/mp_phonons_large/train
+    weighted_sample: false
+    train_max_y: 6.452972390191014
+    train_min_y: 4.087416859737459
+    transforms:
+      normalizer:
+        y:
+          mean: 5.75948248778408
+          stdev: 0.49293154789169097
+  val:
+    src: data/extrapolation_benchmark/mp_phonons_large/val
+  test:
+    src: data/extrapolation_benchmark/mp_phonons_large/test
+logger: tensorboard

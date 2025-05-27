@@ -1,0 +1,19 @@
+includes:
+- configs/erm/equiformer_v2/base.yml
+- configs/erm/params/base_param.yml
+dataset:
+  train:
+    src: data/extrapolation_benchmark/mp_dielectric_large/train
+    weighted_sample: false
+    full_max_y: 4.128149958922145
+    full_min_y: 0.0
+    transforms:
+      normalizer:
+        y:
+          mean: 0.6014011432982702
+          stdev: 0.17061462099656732
+  val:
+    src: data/extrapolation_benchmark/mp_dielectric_large/val
+  test:
+    src: data/extrapolation_benchmark/mp_dielectric_large/test
+logger: tensorboard

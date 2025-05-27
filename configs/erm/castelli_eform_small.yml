@@ -1,0 +1,19 @@
+includes:
+- configs/erm/equiformer_v2/base.yml
+- configs/erm/params/base_param.yml
+dataset:
+  train:
+    src: data/extrapolation_benchmark/castelli_eform_small/train
+    weighted_sample: false
+    full_max_y: 5.16
+    full_min_y: -0.64
+    transforms:
+      normalizer:
+        y:
+          mean: 1.7953732468707584
+          stdev: 0.6371706956794733
+  val:
+    src: data/extrapolation_benchmark/castelli_eform_small/val
+  test:
+    src: data/extrapolation_benchmark/castelli_eform_small/test
+logger: tensorboard

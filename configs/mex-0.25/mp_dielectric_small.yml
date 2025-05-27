@@ -1,0 +1,20 @@
+includes:
+- configs/mex-0.25/equiformer_v2/base_ebm.yml
+- configs/mex-0.25/params/base_param.yml
+dataset:
+  train:
+    format: lmdb
+    src: data/extrapolation_benchmark/mp_dielectric_small/train
+    weighted_sample: false
+    train_max_y: 4.128149958922145
+    train_min_y: 0.561869205807665
+    transforms:
+      normalizer:
+        y:
+          mean: 0.9361676855375998
+          stdev: 0.3514998637688873
+  val:
+    src: data/extrapolation_benchmark/mp_dielectric_small/val
+  test:
+    src: data/extrapolation_benchmark/mp_dielectric_small/test
+logger: tensorboard
