@@ -1,4 +1,4 @@
-trainer: ebm
+trainer: mex
 hide_eval_progressbar: True
 
 task:
@@ -10,7 +10,7 @@ task:
 
 loss_functions:
   - y:
-      fn: nce # or nce
+      fn: nce # or info-nce
       coefficient: 1
   - y:
       fn: euc

@@ -183,8 +183,8 @@ class DerivativeFreeOptimizer:
         best_idxs = scores.argmax(dim=-1)
         return samples[torch.arange(samples.size(0)), best_idxs] # (B, 1)
 
-@registry.register_trainer("ebm")
-class EBMTrainer(BaseTrainer):
+@registry.register_trainer("mex")
+class MEXTrainer(BaseTrainer):
     def __init__(
         self,
         task,
