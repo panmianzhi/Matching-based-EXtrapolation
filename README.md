@@ -1,5 +1,5 @@
 # [AI4MAT-ICLR-2025 Spotlight] Towards Extrapolation in Deep Material Property Rregression
-This is the official implementation code for AI4MAT-ICLR-2025 Spotlight paper MEX.
+This is the official implementation code for AI4MAT-ICLR-2025 Spotlight paper [MEX](https://openreview.net/pdf?id=GL5yVOFPpf).
 
 Here is the visualization of the Matching-based EXtrapolation (MEX) framework.
 
